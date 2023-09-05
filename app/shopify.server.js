@@ -10,12 +10,14 @@ import { restResources } from "@shopify/shopify-api/rest/admin/2023-07";
 
 import prisma from "./db.server";
 
+console.log('process.env.SHOPIFY_APP_URL-----', process.env.SHOPIFY_APP_URL)
+
 const shopify = shopifyApp({
-  apiKey: process.env.SHOPIFY_API_KEY,
-  apiSecretKey: process.env.SHOPIFY_API_SECRET || "",
+  apiKey: process.env.SHOPIFY_API_KEY || "8fc48dc480b50ab258889916fa4410c0",
+  apiSecretKey: process.env.SHOPIFY_API_SECRET || "bd26e678a52883eb78a2d2e2a7f407f5",
   apiVersion: LATEST_API_VERSION,
-  scopes: process.env.SCOPES?.split(","),
-  appUrl: process.env.SHOPIFY_APP_URL || "",
+  scopes: process.env.SCOPES?.split(",") || ["write_products"],
+  appUrl: process.env.SHOPIFY_APP_URL || "https://dgm-05-vietjetstar.de",
   authPathPrefix: "/auth",
   sessionStorage: new PrismaSessionStorage(prisma),
   distribution: AppDistribution.AppStore,
