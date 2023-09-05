@@ -10,8 +10,6 @@ import { restResources } from "@shopify/shopify-api/rest/admin/2023-07";
 
 import prisma from "./db.server";
 
-console.log('process.env.SHOPIFY_APP_URL-----', process.env.SHOPIFY_APP_URL)
-
 const shopify = shopifyApp({
   apiKey: process.env.SHOPIFY_API_KEY || "8fc48dc480b50ab258889916fa4410c0",
   apiSecretKey: process.env.SHOPIFY_API_SECRET || "bd26e678a52883eb78a2d2e2a7f407f5",
