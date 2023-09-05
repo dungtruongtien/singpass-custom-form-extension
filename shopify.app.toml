@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "singpass-custom-form"
+client_id = "8fc48dc480b50ab258889916fa4410c0"
+application_url = "https://machine-nuke-oval-obligation.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://machine-nuke-oval-obligation.trycloudflare.com/auth/callback",
+  "https://machine-nuke-oval-obligation.trycloudflare.com/auth/shopify/callback",
+  "https://machine-nuke-oval-obligation.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "test-singpass-custom-form.myshopify.com"

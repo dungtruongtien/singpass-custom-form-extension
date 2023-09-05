@@ -1,0 +1,8 @@
+#singpass-verify-button {
+  display: none;
+  border-radius: 5px;
+  border: none;
+  padding: 0.5rem;
+  width: 100%;
+  background-color: rgb(227, 231, 235);
+}
