@@ -2,7 +2,7 @@
 
 name = "singpass-form-my-own-store"
 client_id = "a49c5ced1256443bf410c09a2d041747"
-application_url = "https://surround-explicit-reader-hearts.trycloudflare.com"
+application_url = "https://example.com"
 embedded = true
 
 [access_scopes]
@@ -11,9 +11,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://surround-explicit-reader-hearts.trycloudflare.com/auth/callback",
-  "https://surround-explicit-reader-hearts.trycloudflare.com/auth/shopify/callback",
-  "https://surround-explicit-reader-hearts.trycloudflare.com/api/auth/callback"
+  "https://example.com/auth/callback",
+  "https://example.com/auth/shopify/callback",
+  "https://example.com/api/auth/callback"
 ]
 
 [webhooks]
